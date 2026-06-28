@@ -1,0 +1,449 @@
+{
+ "blocks": [
+  {
+   "name": "Hematology & Coagulation",
+   "color": "C62133",
+   "key": "heme"
+  },
+  {
+   "name": "Transfusion Medicine",
+   "color": "AD1457",
+   "key": "trans"
+  },
+  {
+   "name": "Clinical Chemistry",
+   "color": "1565C0",
+   "key": "chem"
+  },
+  {
+   "name": "Microbiology",
+   "color": "2E7D32",
+   "key": "micro"
+  },
+  {
+   "name": "Immunology & Serology",
+   "color": "6A1B9A",
+   "key": "immuno"
+  },
+  {
+   "name": "Molecular & Cytogenetics",
+   "color": "00838F",
+   "key": "molecular"
+  },
+  {
+   "name": "Laboratory Management & Quality",
+   "color": "455A64",
+   "key": "labmgmt"
+  }
+ ],
+ "decks": [
+  {
+   "file": "decks/Coag_05_Coagulation-Testing-and-Bleeding-Thrombosis.pptx",
+   "code": "Coag_05",
+   "slides": 24,
+   "block": "Hematology & Coagulation",
+   "blockKey": "heme",
+   "color": "C62133",
+   "title": "Coagulation Testing and Bleeding / Thrombosis Evaluation",
+   "mins": "45–60 min",
+   "num": 5,
+   "desc": "PT / aPTT pathways and common causes of prolongation · Mixing studies: correction vs non-correction · Factor assays and specific inhibitors"
+  },
+  {
+   "file": "decks/Heme_01_CBC-and-Peripheral-Smear.pptx",
+   "code": "Heme_01",
+   "slides": 25,
+   "block": "Hematology & Coagulation",
+   "blockKey": "heme",
+   "color": "C62133",
+   "title": "CBC and Peripheral Smear Interpretation",
+   "mins": "45–60 min",
+   "num": 1,
+   "desc": "RBC indices (MCV, MCH, RDW) and reticulocytes · WBC differential and analyzer flags · Platelet estimate and clumping"
+  },
+  {
+   "file": "decks/Heme_02_Anemia-and-Red-Cell-Disorders.pptx",
+   "code": "Heme_02",
+   "slides": 24,
+   "block": "Hematology & Coagulation",
+   "blockKey": "heme",
+   "color": "C62133",
+   "title": "Anemia Workup and Red Cell Disorders",
+   "mins": "45–60 min",
+   "num": 2,
+   "desc": "MCV-based diagnostic algorithm · Iron studies: ferritin, transferrin saturation, sTfR · Reticulocyte count and production index"
+  },
+  {
+   "file": "decks/Heme_03_Leukocytosis-Cytopenias-Leukemia-Screening.pptx",
+   "code": "Heme_03",
+   "slides": 24,
+   "block": "Hematology & Coagulation",
+   "blockKey": "heme",
+   "color": "C62133",
+   "title": "Leukocytosis, Cytopenias, and Acute Leukemia Screening",
+   "mins": "45–60 min",
+   "num": 3,
+   "desc": "Differential of leukocytosis and left shift · Pancytopenia: production vs destruction · Blast morphology and Auer rods"
+  },
+  {
+   "file": "decks/Heme_04_Platelet-Disorders-and-Thrombocytopenia.pptx",
+   "code": "Heme_04",
+   "slides": 24,
+   "block": "Hematology & Coagulation",
+   "blockKey": "heme",
+   "color": "C62133",
+   "title": "Platelet Disorders and Thrombocytopenia",
+   "mins": "45–60 min",
+   "num": 4,
+   "desc": "EDTA-induced platelet clumping · Production vs destruction vs sequestration · ITP as a diagnosis of exclusion"
+  },
+  {
+   "file": "decks/Trans_01_ABO-Rh-Antibody-Screen-Compatibility.pptx",
+   "code": "Trans_01",
+   "slides": 36,
+   "block": "Transfusion Medicine",
+   "blockKey": "trans",
+   "color": "AD1457",
+   "title": "ABO/Rh, Antibody Screen, and Compatibility Testing",
+   "mins": "45–60 min",
+   "num": 1,
+   "desc": "ABO forward/reverse typing and discrepancies · Rh(D) typing, weak D, partial D · Antibody screen and pretransfusion workflow"
+  },
+  {
+   "file": "decks/Trans_02_Antibody-Identification-and-Complex-Serology.pptx",
+   "code": "Trans_02",
+   "slides": 47,
+   "block": "Transfusion Medicine",
+   "blockKey": "trans",
+   "color": "AD1457",
+   "title": "Antibody Identification and Complex Serology",
+   "mins": "45–60 min",
+   "num": 2,
+   "desc": "Panel interpretation: ruling out and in · Clinically significant alloantibodies (Rh, Kell, Kidd, Duffy) · Warm autoantibody workup; adsorptions"
+  },
+  {
+   "file": "decks/Trans_03_Transfusion-Reactions.pptx",
+   "code": "Trans_03",
+   "slides": 37,
+   "block": "Transfusion Medicine",
+   "blockKey": "trans",
+   "color": "AD1457",
+   "title": "Transfusion Reactions",
+   "mins": "45–60 min",
+   "num": 3,
+   "desc": "First response: stop–stabilize–verify–notify · Acute hemolytic (AHTR) and the ABO error · FNHTR, allergic, and anaphylactic reactions"
+  },
+  {
+   "file": "decks/Trans_04_Component-Therapy-and-Massive-Transfusion.pptx",
+   "code": "Trans_04",
+   "slides": 30,
+   "block": "Transfusion Medicine",
+   "blockKey": "trans",
+   "color": "AD1457",
+   "title": "Component Therapy and Massive Transfusion",
+   "mins": "45–60 min",
+   "num": 4,
+   "desc": "RBC, platelet, plasma, cryoprecipitate indications · Restrictive transfusion thresholds · Fibrinogen replacement and cryoprecipitate"
+  },
+  {
+   "file": "decks/Trans_05_Special-Topics-in-Blood-Bank.pptx",
+   "code": "Trans_05",
+   "slides": 30,
+   "block": "Transfusion Medicine",
+   "blockKey": "trans",
+   "color": "AD1457",
+   "title": "Special Topics in Blood Bank",
+   "mins": "45–60 min",
+   "num": 5,
+   "desc": "Hemolytic disease of the fetus and newborn · Neonatal and intrauterine transfusion · Rh immune globulin and the fetomaternal hemorrhage estimate"
+  },
+  {
+   "file": "decks/Chem_01_Analytic-Techniques-and-Error.pptx",
+   "code": "Chem_01",
+   "slides": 26,
+   "block": "Clinical Chemistry",
+   "blockKey": "chem",
+   "color": "1565C0",
+   "title": "Analytic Techniques and Preanalytic / Analytic Error",
+   "mins": "45–60 min",
+   "num": 1,
+   "desc": "Spectrophotometry and Beer–Lambert basics · Competitive vs sandwich immunoassays · Chromatography and LC-MS/MS overview"
+  },
+  {
+   "file": "decks/Chem_02_Electrolytes-Osmolality-Acid-Base.pptx",
+   "code": "Chem_02",
+   "slides": 21,
+   "block": "Clinical Chemistry",
+   "blockKey": "chem",
+   "color": "1565C0",
+   "title": "Electrolytes, Osmolality, and Acid–Base Interpretation",
+   "mins": "45–60 min",
+   "num": 2,
+   "desc": "Sodium disorders and tonicity · Anion gap and delta-delta · Osmolal gap and toxic alcohols"
+  },
+  {
+   "file": "decks/Chem_03_Renal-Liver-Cardiac-Biomarkers.pptx",
+   "code": "Chem_03",
+   "slides": 21,
+   "block": "Clinical Chemistry",
+   "blockKey": "chem",
+   "color": "1565C0",
+   "title": "Renal, Liver, and Cardiac Biomarkers",
+   "mins": "45–60 min",
+   "num": 3,
+   "desc": "Creatinine, eGFR equations, cystatin C · Hepatocellular vs cholestatic LFT patterns · High-sensitivity troponin kinetics"
+  },
+  {
+   "file": "decks/Chem_04_Endocrine-and-Protein-Testing.pptx",
+   "code": "Chem_04",
+   "slides": 22,
+   "block": "Clinical Chemistry",
+   "blockKey": "chem",
+   "color": "1565C0",
+   "title": "Endocrine and Protein Testing",
+   "mins": "45–60 min",
+   "num": 4,
+   "desc": "TSH-reflex strategy and thyroid interferences · Cortisol / ACTH dynamic testing caveats · SPEP / UPEP / IFE pattern recognition"
+  },
+  {
+   "file": "decks/Chem_05_Toxicology-TDM-POCT.pptx",
+   "code": "Chem_05",
+   "slides": 21,
+   "block": "Clinical Chemistry",
+   "blockKey": "chem",
+   "color": "1565C0",
+   "title": "Toxicology, TDM, and Point-of-Care Testing",
+   "mins": "45–60 min",
+   "num": 5,
+   "desc": "Drug-of-abuse screen vs confirmation (LC-MS/MS, GC-MS) · TDM: trough/peak timing and steady state · Cross-reactivity and false positives/negatives"
+  },
+  {
+   "file": "decks/Micro_01_Specimen-Selection-Collection-Rejection.pptx",
+   "code": "Micro_01",
+   "slides": 20,
+   "block": "Microbiology",
+   "blockKey": "micro",
+   "color": "2E7D32",
+   "title": "Specimen Selection, Collection, and Rejection Criteria",
+   "mins": "45–60 min",
+   "num": 1,
+   "desc": "Specimen-to-pathogen matching · Transport media and time/temperature · Rejection criteria (e.g., saliva sputum, dry swab)"
+  },
+  {
+   "file": "decks/Micro_02_Gram-Stain-Culture-Identification.pptx",
+   "code": "Micro_02",
+   "slides": 20,
+   "block": "Microbiology",
+   "blockKey": "micro",
+   "color": "2E7D32",
+   "title": "Gram Stain, Culture Workflows, and Organism Identification",
+   "mins": "45–60 min",
+   "num": 2,
+   "desc": "Gram-stain morphology and reporting · Primary and selective media · Colony morphology cues"
+  },
+  {
+   "file": "decks/Micro_03_Antimicrobial-Susceptibility-Testing.pptx",
+   "code": "Micro_03",
+   "slides": 20,
+   "block": "Microbiology",
+   "blockKey": "micro",
+   "color": "2E7D32",
+   "title": "Antimicrobial Susceptibility Testing and Reporting",
+   "mins": "45–60 min",
+   "num": 3,
+   "desc": "MIC, breakpoints, and interpretive categories · Disk diffusion, broth microdilution, gradient strips · Cascade / selective reporting"
+  },
+  {
+   "file": "decks/Micro_04_Rapid-Diagnostics-Molecular-Microbiology.pptx",
+   "code": "Micro_04",
+   "slides": 20,
+   "block": "Microbiology",
+   "blockKey": "micro",
+   "color": "2E7D32",
+   "title": "Rapid Diagnostics and Molecular Microbiology",
+   "mins": "45–60 min",
+   "num": 4,
+   "desc": "NAAT principles and multiplex panels · Respiratory, GI, meningitis/encephalitis panels · Detection vs viability vs colonization"
+  },
+  {
+   "file": "decks/Micro_05_Blood-Cultures-Sepsis-Infection-Control.pptx",
+   "code": "Micro_05",
+   "slides": 20,
+   "block": "Microbiology",
+   "blockKey": "micro",
+   "color": "2E7D32",
+   "title": "Blood Cultures, Sepsis, and Infection-Control Pearls",
+   "mins": "45–60 min",
+   "num": 5,
+   "desc": "Blood-culture volume and number of sets · Contaminant vs true pathogen clues · Time-to-positivity and differential"
+  },
+  {
+   "file": "decks/Immuno_01_Immunoassay-Principles-Test-Performance.pptx",
+   "code": "Immuno_01",
+   "slides": 20,
+   "block": "Immunology & Serology",
+   "blockKey": "immuno",
+   "color": "6A1B9A",
+   "title": "Immunoassay Principles and Test Performance",
+   "mins": "45–60 min",
+   "num": 1,
+   "desc": "Sensitivity / specificity / PPV / NPV · Prevalence and predictive value · Heterophile antibody and biotin interference"
+  },
+  {
+   "file": "decks/Immuno_02_Autoimmune-Serology.pptx",
+   "code": "Immuno_02",
+   "slides": 21,
+   "block": "Immunology & Serology",
+   "blockKey": "immuno",
+   "color": "6A1B9A",
+   "title": "Autoimmune Serology",
+   "mins": "45–60 min",
+   "num": 2,
+   "desc": "ANA by IFA: patterns and titer · ENA panel and disease associations · ANCA (c-/p-ANCA, PR3, MPO)"
+  },
+  {
+   "file": "decks/Immuno_03_Infectious-Disease-Serology.pptx",
+   "code": "Immuno_03",
+   "slides": 21,
+   "block": "Immunology & Serology",
+   "blockKey": "immuno",
+   "color": "6A1B9A",
+   "title": "Infectious Disease Serology",
+   "mins": "45–60 min",
+   "num": 3,
+   "desc": "IgM/IgG kinetics and window periods · Hepatitis B serologic panel · HIV 4th-generation algorithm"
+  },
+  {
+   "file": "decks/Immuno_04_Allergy-Immunodeficiency-Protein-Testing.pptx",
+   "code": "Immuno_04",
+   "slides": 21,
+   "block": "Immunology & Serology",
+   "blockKey": "immuno",
+   "color": "6A1B9A",
+   "title": "Allergy, Immunodeficiency, and Protein-Based Immune Testing",
+   "mins": "45–60 min",
+   "num": 4,
+   "desc": "Quantitative IgG/IgA/IgM/IgE · SPEP correlation and hypogammaglobulinemia · Specific IgE and tryptase"
+  },
+  {
+   "file": "decks/Molecular_01_Molecular-Methods-for-Residents.pptx",
+   "code": "Molecular_01",
+   "slides": 21,
+   "block": "Molecular & Cytogenetics",
+   "blockKey": "molecular",
+   "color": "00838F",
+   "title": "Molecular Methods for Residents",
+   "mins": "45–60 min",
+   "num": 1,
+   "desc": "PCR and quantitative / RT-PCR · FISH and karyotype · Next-generation sequencing overview"
+  },
+  {
+   "file": "decks/Molecular_02_Variant-Interpretation-and-Reporting.pptx",
+   "code": "Molecular_02",
+   "slides": 21,
+   "block": "Molecular & Cytogenetics",
+   "blockKey": "molecular",
+   "color": "00838F",
+   "title": "Variant Interpretation and Reporting",
+   "mins": "45–60 min",
+   "num": 2,
+   "desc": "ACMG/AMP and somatic tiering frameworks · HGVS nomenclature · Germline vs somatic interpretation"
+  },
+  {
+   "file": "decks/Molecular_03_Molecular-Testing-in-Hematologic-Malignancy.pptx",
+   "code": "Molecular_03",
+   "slides": 21,
+   "block": "Molecular & Cytogenetics",
+   "blockKey": "molecular",
+   "color": "00838F",
+   "title": "Molecular Testing in Hematologic Malignancy",
+   "mins": "45–60 min",
+   "num": 3,
+   "desc": "BCR-ABL1 and other fusions · Clonality (IGH/TCR rearrangement) · MRD concepts and methods"
+  },
+  {
+   "file": "decks/Molecular_04_Solid-Tumor-and-Germline-Testing.pptx",
+   "code": "Molecular_04",
+   "slides": 21,
+   "block": "Molecular & Cytogenetics",
+   "blockKey": "molecular",
+   "color": "00838F",
+   "title": "Solid Tumor and Germline Testing Fundamentals",
+   "mins": "45–60 min",
+   "num": 4,
+   "desc": "Companion diagnostics and targeted therapy · Hereditary cancer syndromes · Tissue adequacy, fixation, and tumor fraction"
+  },
+  {
+   "file": "decks/Molecular_05_Validation-QC-Bioinformatics.pptx",
+   "code": "Molecular_05",
+   "slides": 21,
+   "block": "Molecular & Cytogenetics",
+   "blockKey": "molecular",
+   "color": "00838F",
+   "title": "Validation, Quality Control, and Bioinformatics Essentials",
+   "mins": "45–60 min",
+   "num": 5,
+   "desc": "Analytic validation: accuracy, precision, LOD · Contamination control and amplicon carryover · Bioinformatics pipeline awareness"
+  },
+  {
+   "file": "decks/LabMgmt_01_Quality-Management-Systems.pptx",
+   "code": "LabMgmt_01",
+   "slides": 21,
+   "block": "Laboratory Management & Quality",
+   "blockKey": "labmgmt",
+   "color": "455A64",
+   "title": "Quality Management Systems",
+   "mins": "45–60 min",
+   "num": 1,
+   "desc": "QC vs QA vs QMS · Levey–Jennings and Westgard multirules · Proficiency testing and peer comparison"
+  },
+  {
+   "file": "decks/LabMgmt_02_Regulatory-and-Accreditation.pptx",
+   "code": "LabMgmt_02",
+   "slides": 20,
+   "block": "Laboratory Management & Quality",
+   "blockKey": "labmgmt",
+   "color": "455A64",
+   "title": "Regulatory and Accreditation Essentials",
+   "mins": "45–60 min",
+   "num": 2,
+   "desc": "CLIA complexity categories · CAP accreditation and checklists · Inspection readiness"
+  },
+  {
+   "file": "decks/LabMgmt_03_Patient-Safety-Error-Investigation.pptx",
+   "code": "LabMgmt_03",
+   "slides": 21,
+   "block": "Laboratory Management & Quality",
+   "blockKey": "labmgmt",
+   "color": "455A64",
+   "title": "Patient Safety and Error Investigation",
+   "mins": "45–60 min",
+   "num": 3,
+   "desc": "Root-cause analysis methods · Near miss vs adverse event · Transfusion-safety events and haemovigilance"
+  },
+  {
+   "file": "decks/LabMgmt_04_Informatics-and-LIS.pptx",
+   "code": "LabMgmt_04",
+   "slides": 20,
+   "block": "Laboratory Management & Quality",
+   "blockKey": "labmgmt",
+   "color": "455A64",
+   "title": "Laboratory Informatics and LIS Fundamentals",
+   "mins": "45–60 min",
+   "num": 4,
+   "desc": "LIS architecture and workflow · Middleware and autoverification rules · Interfaces (HL7) and failure modes"
+  },
+  {
+   "file": "decks/LabMgmt_05_Utilization-Cost-Leadership.pptx",
+   "code": "LabMgmt_05",
+   "slides": 21,
+   "block": "Laboratory Management & Quality",
+   "blockKey": "labmgmt",
+   "color": "455A64",
+   "title": "Utilization Management, Cost Awareness, and Leadership",
+   "mins": "45–60 min",
+   "num": 5,
+   "desc": "Test utilization and overuse reduction · Send-out formulary management · Consultative pathology practice"
+  }
+ ]
+}

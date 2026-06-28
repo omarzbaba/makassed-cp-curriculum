@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Makassed CP Residency — Lecture Library · Dr. Tamima El-Jisr</title>
+<style>
+:root{--navy:#0E3A5F;--navy-dk:#0A2A45;--ink:#1B2A38;--body:#33444F;--muted:#6B7B8A;--line:#E1E7ED;--bg:#F4F7FA;--card:#fff;}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+header{background:linear-gradient(135deg,var(--navy-dk),var(--navy));color:#fff;padding:34px 0 30px;position:relative;overflow:hidden}
+header .ring{position:absolute;border-radius:50%;border:2px solid rgba(173,20,87,.35)}
+.kicker{font-size:12px;font-weight:700;letter-spacing:2px;color:#9DB8CE;text-transform:uppercase}
+h1{margin:.3rem 0 .15rem;font-size:30px;font-weight:800}
+.sub{color:#C6D6E4;font-size:15px}
+.prepared{margin-top:16px;display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);padding:9px 15px;border-radius:30px;font-size:14px}
+.prepared b{color:#fff}
+.stripe{height:5px;background:linear-gradient(90deg,#C62133,#AD1457,#1565C0,#2E7D32,#6A1B9A,#00838F,#455A64)}
+.tabs{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.96);backdrop-filter:saturate(160%) blur(6px);border-bottom:1px solid var(--line)}
+.tabrow{display:flex;gap:8px;flex-wrap:wrap;padding:11px 0}
+.tab{cursor:pointer;border:1px solid var(--line);background:#fff;padding:7px 13px;border-radius:22px;font-size:13.5px;font-weight:600;color:var(--body);user-select:none;display:inline-flex;align-items:center;gap:7px;transition:.12s}
+.tab .dot{width:9px;height:9px;border-radius:50%}
+.tab:hover{border-color:#c3ccd5}
+.tab.active{color:#fff;border-color:transparent}
+.toolbar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:18px 0 6px}
+#q{flex:1;min-width:220px;padding:11px 14px;border:1.5px solid var(--line);border-radius:9px;font-size:15px;background:#fff}
+#q:focus{outline:none;border-color:var(--navy)}
+.count{color:var(--muted);font-size:13px;white-space:nowrap}
+.btn{cursor:pointer;border:none;border-radius:9px;padding:10px 15px;font-size:13.5px;font-weight:700}
+.btn-ghost{background:#fff;border:1.5px solid var(--line);color:var(--body)}
+.btn-ghost:hover{border-color:#c3ccd5}
+.blocktitle{display:flex;align-items:center;gap:11px;margin:26px 0 12px;font-size:15px;font-weight:800;letter-spacing:.3px;text-transform:uppercase}
+.blocktitle .bar{width:30px;height:4px;border-radius:3px}
+.blocktitle .n{color:var(--muted);font-weight:600;font-size:13px;text-transform:none;letter-spacing:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 16px 14px;display:flex;flex-direction:column;gap:9px;transition:.12s;position:relative}
+.card:hover{box-shadow:0 6px 22px rgba(20,40,60,.09);transform:translateY(-1px)}
+.card .top{display:flex;align-items:flex-start;gap:11px}
+.badge{flex:0 0 auto;width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:14px}
+.card h3{margin:0;font-size:15px;font-weight:700;line-height:1.3;color:var(--ink)}
+.card .meta{font-size:12px;color:var(--muted);margin-top:2px}
+.card .desc{font-size:12.5px;color:var(--body);flex:1}
+.card .row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:2px}
+.dl{cursor:pointer;text-decoration:none;font-size:13px;font-weight:700;padding:8px 13px;border-radius:8px;color:#fff;display:inline-flex;align-items:center;gap:6px}
+.chk{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--muted);cursor:pointer;user-select:none}
+.chk input{width:16px;height:16px;accent-color:var(--navy)}
+.selbar{position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--navy);color:#fff;transform:translateY(110%);transition:.2s;box-shadow:0 -6px 24px rgba(0,0,0,.2)}
+.selbar.show{transform:translateY(0)}
+.selbar .inner{max-width:1180px;margin:0 auto;padding:13px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.selbar b{font-size:15px}
+.selbar .acts{display:flex;gap:10px;align-items:center}
+.btn-dl{background:#fff;color:var(--navy)}
+.btn-clear{background:rgba(255,255,255,.14);color:#fff}
+.home-hero{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:20px 0 4px;display:flex;gap:26px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.stats{display:flex;gap:30px;flex-wrap:wrap}
+.stat .big{font-size:30px;font-weight:800;color:var(--navy)}
+.stat .lab{font-size:12px;color:var(--muted)}
+.cta{display:flex;gap:10px;flex-wrap:wrap}
+.cta a{text-decoration:none;font-weight:700;font-size:13.5px;padding:11px 16px;border-radius:9px}
+.cta .pri{background:var(--navy);color:#fff}
+.cta .sec{background:#fff;border:1.5px solid var(--line);color:var(--body)}
+footer{color:var(--muted);font-size:12.5px;text-align:center;padding:34px 20px 60px}
+.note{background:#FFF7E6;border:1px solid #F1D79A;color:#7A5B12;font-size:12.5px;padding:10px 14px;border-radius:9px;margin:14px 0}
+@media(max-width:560px){h1{font-size:23px}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="stripe"></div>
+<header>
+  <div class="ring" style="width:320px;height:320px;right:-70px;top:-80px"></div>
+  <div class="ring" style="width:200px;height:200px;right:30px;top:40px;border-color:rgba(255,255,255,.12)"></div>
+  <div class="wrap">
+    <div class="kicker">Makassed General Hospital · Department of Laboratory Medicine</div>
+    <h1>Clinical Pathology Residency — Lecture Library</h1>
+    <div class="sub">A complete, case-based teaching curriculum across seven clinical pathology domains.</div>
+    <div class="prepared">Prepared for <b>Dr. Tamima El-Jisr</b> · Chairperson, Department of Laboratory Medicine</div>
+  </div>
+</header>
+<div class="tabs"><div class="wrap"><div class="tabrow" id="tabrow"></div></div></div>
+<div class="wrap">
+  <div id="home"></div>
+  <div class="toolbar">
+    <input id="q" type="search" placeholder="Search lectures by title or topic…" autocomplete="off">
+    <button class="btn btn-ghost" id="selectAll">Select all shown</button>
+    <span class="count" id="count"></span>
+  </div>
+  <div id="list"></div>
+</div>
+<div class="selbar" id="selbar"><div class="inner">
+  <b><span id="selN">0</span> lecture(s) selected</b>
+  <div class="acts">
+    <button class="btn btn-clear" id="clearSel">Clear</button>
+    <button class="btn btn-dl" id="dlZip">Download selected (.zip)</button>
+  </div>
+</div></div>
+<footer>
+  Makassed General Hospital · Department of Laboratory Medicine — Clinical Pathology Residency Lecture Series.<br>
+  34 lectures · 803 slides · 7 subspecialty blocks. Curated for resident teaching. Maintained by the Department.
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+const DATA={"blocks":[{"name":"Hematology & Coagulation","color":"C62133","key":"heme"},{"name":"Transfusion Medicine","color":"AD1457","key":"trans"},{"name":"Clinical Chemistry","color":"1565C0","key":"chem"},{"name":"Microbiology","color":"2E7D32","key":"micro"},{"name":"Immunology & Serology","color":"6A1B9A","key":"immuno"},{"name":"Molecular & Cytogenetics","color":"00838F","key":"molecular"},{"name":"Laboratory Management & Quality","color":"455A64","key":"labmgmt"}],"decks":[{"file":"decks/Coag_05_Coagulation-Testing-and-Bleeding-Thrombosis.pptx","code":"Coag_05","slides":24,"block":"Hematology & Coagulation","blockKey":"heme","color":"C62133","title":"Coagulation Testing and Bleeding / Thrombosis Evaluation","mins":"45–60 min","num":5,"desc":"PT / aPTT pathways and common causes of prolongation · Mixing studies: correction vs non-correction · Factor assays and specific inhibitors"},{"file":"decks/Heme_01_CBC-and-Peripheral-Smear.pptx","code":"Heme_01","slides":25,"block":"Hematology & Coagulation","blockKey":"heme","color":"C62133","title":"CBC and Peripheral Smear Interpretation","mins":"45–60 min","num":1,"desc":"RBC indices (MCV, MCH, RDW) and reticulocytes · WBC differential and analyzer flags · Platelet estimate and clumping"},{"file":"decks/Heme_02_Anemia-and-Red-Cell-Disorders.pptx","code":"Heme_02","slides":24,"block":"Hematology & Coagulation","blockKey":"heme","color":"C62133","title":"Anemia Workup and Red Cell Disorders","mins":"45–60 min","num":2,"desc":"MCV-based diagnostic algorithm · Iron studies: ferritin, transferrin saturation, sTfR · Reticulocyte count and production index"},{"file":"decks/Heme_03_Leukocytosis-Cytopenias-Leukemia-Screening.pptx","code":"Heme_03","slides":24,"block":"Hematology & Coagulation","blockKey":"heme","color":"C62133","title":"Leukocytosis, Cytopenias, and Acute Leukemia Screening","mins":"45–60 min","num":3,"desc":"Differential of leukocytosis and left shift · Pancytopenia: production vs destruction · Blast morphology and Auer rods"},{"file":"decks/Heme_04_Platelet-Disorders-and-Thrombocytopenia.pptx","code":"Heme_04","slides":24,"block":"Hematology & Coagulation","blockKey":"heme","color":"C62133","title":"Platelet Disorders and Thrombocytopenia","mins":"45–60 min","num":4,"desc":"EDTA-induced platelet clumping · Production vs destruction vs sequestration · ITP as a diagnosis of exclusion"},{"file":"decks/Trans_01_ABO-Rh-Antibody-Screen-Compatibility.pptx","code":"Trans_01","slides":36,"block":"Transfusion Medicine","blockKey":"trans","color":"AD1457","title":"ABO/Rh, Antibody Screen, and Compatibility Testing","mins":"45–60 min","num":1,"desc":"ABO forward/reverse typing and discrepancies · Rh(D) typing, weak D, partial D · Antibody screen and pretransfusion workflow"},{"file":"decks/Trans_02_Antibody-Identification-and-Complex-Serology.pptx","code":"Trans_02","slides":47,"block":"Transfusion Medicine","blockKey":"trans","color":"AD1457","title":"Antibody Identification and Complex Serology","mins":"45–60 min","num":2,"desc":"Panel interpretation: ruling out and in · Clinically significant alloantibodies (Rh, Kell, Kidd, Duffy) · Warm autoantibody workup; adsorptions"},{"file":"decks/Trans_03_Transfusion-Reactions.pptx","code":"Trans_03","slides":37,"block":"Transfusion Medicine","blockKey":"trans","color":"AD1457","title":"Transfusion Reactions","mins":"45–60 min","num":3,"desc":"First response: stop–stabilize–verify–notify · Acute hemolytic (AHTR) and the ABO error · FNHTR, allergic, and anaphylactic reactions"},{"file":"decks/Trans_04_Component-Therapy-and-Massive-Transfusion.pptx","code":"Trans_04","slides":30,"block":"Transfusion Medicine","blockKey":"trans","color":"AD1457","title":"Component Therapy and Massive Transfusion","mins":"45–60 min","num":4,"desc":"RBC, platelet, plasma, cryoprecipitate indications · Restrictive transfusion thresholds · Fibrinogen replacement and cryoprecipitate"},{"file":"decks/Trans_05_Special-Topics-in-Blood-Bank.pptx","code":"Trans_05","slides":30,"block":"Transfusion Medicine","blockKey":"trans","color":"AD1457","title":"Special Topics in Blood Bank","mins":"45–60 min","num":5,"desc":"Hemolytic disease of the fetus and newborn · Neonatal and intrauterine transfusion · Rh immune globulin and the fetomaternal hemorrhage estimate"},{"file":"decks/Chem_01_Analytic-Techniques-and-Error.pptx","code":"Chem_01","slides":26,"block":"Clinical Chemistry","blockKey":"chem","color":"1565C0","title":"Analytic Techniques and Preanalytic / Analytic Error","mins":"45–60 min","num":1,"desc":"Spectrophotometry and Beer–Lambert basics · Competitive vs sandwich immunoassays · Chromatography and LC-MS/MS overview"},{"file":"decks/Chem_02_Electrolytes-Osmolality-Acid-Base.pptx","code":"Chem_02","slides":21,"block":"Clinical Chemistry","blockKey":"chem","color":"1565C0","title":"Electrolytes, Osmolality, and Acid–Base Interpretation","mins":"45–60 min","num":2,"desc":"Sodium disorders and tonicity · Anion gap and delta-delta · Osmolal gap and toxic alcohols"},{"file":"decks/Chem_03_Renal-Liver-Cardiac-Biomarkers.pptx","code":"Chem_03","slides":21,"block":"Clinical Chemistry","blockKey":"chem","color":"1565C0","title":"Renal, Liver, and Cardiac Biomarkers","mins":"45–60 min","num":3,"desc":"Creatinine, eGFR equations, cystatin C · Hepatocellular vs cholestatic LFT patterns · High-sensitivity troponin kinetics"},{"file":"decks/Chem_04_Endocrine-and-Protein-Testing.pptx","code":"Chem_04","slides":22,"block":"Clinical Chemistry","blockKey":"chem","color":"1565C0","title":"Endocrine and Protein Testing","mins":"45–60 min","num":4,"desc":"TSH-reflex strategy and thyroid interferences · Cortisol / ACTH dynamic testing caveats · SPEP / UPEP / IFE pattern recognition"},{"file":"decks/Chem_05_Toxicology-TDM-POCT.pptx","code":"Chem_05","slides":21,"block":"Clinical Chemistry","blockKey":"chem","color":"1565C0","title":"Toxicology, TDM, and Point-of-Care Testing","mins":"45–60 min","num":5,"desc":"Drug-of-abuse screen vs confirmation (LC-MS/MS, GC-MS) · TDM: trough/peak timing and steady state · Cross-reactivity and false positives/negatives"},{"file":"decks/Micro_01_Specimen-Selection-Collection-Rejection.pptx","code":"Micro_01","slides":20,"block":"Microbiology","blockKey":"micro","color":"2E7D32","title":"Specimen Selection, Collection, and Rejection Criteria","mins":"45–60 min","num":1,"desc":"Specimen-to-pathogen matching · Transport media and time/temperature · Rejection criteria (e.g., saliva sputum, dry swab)"},{"file":"decks/Micro_02_Gram-Stain-Culture-Identification.pptx","code":"Micro_02","slides":20,"block":"Microbiology","blockKey":"micro","color":"2E7D32","title":"Gram Stain, Culture Workflows, and Organism Identification","mins":"45–60 min","num":2,"desc":"Gram-stain morphology and reporting · Primary and selective media · Colony morphology cues"},{"file":"decks/Micro_03_Antimicrobial-Susceptibility-Testing.pptx","code":"Micro_03","slides":20,"block":"Microbiology","blockKey":"micro","color":"2E7D32","title":"Antimicrobial Susceptibility Testing and Reporting","mins":"45–60 min","num":3,"desc":"MIC, breakpoints, and interpretive categories · Disk diffusion, broth microdilution, gradient strips · Cascade / selective reporting"},{"file":"decks/Micro_04_Rapid-Diagnostics-Molecular-Microbiology.pptx","code":"Micro_04","slides":20,"block":"Microbiology","blockKey":"micro","color":"2E7D32","title":"Rapid Diagnostics and Molecular Microbiology","mins":"45–60 min","num":4,"desc":"NAAT principles and multiplex panels · Respiratory, GI, meningitis/encephalitis panels · Detection vs viability vs colonization"},{"file":"decks/Micro_05_Blood-Cultures-Sepsis-Infection-Control.pptx","code":"Micro_05","slides":20,"block":"Microbiology","blockKey":"micro","color":"2E7D32","title":"Blood Cultures, Sepsis, and Infection-Control Pearls","mins":"45–60 min","num":5,"desc":"Blood-culture volume and number of sets · Contaminant vs true pathogen clues · Time-to-positivity and differential"},{"file":"decks/Immuno_01_Immunoassay-Principles-Test-Performance.pptx","code":"Immuno_01","slides":20,"block":"Immunology & Serology","blockKey":"immuno","color":"6A1B9A","title":"Immunoassay Principles and Test Performance","mins":"45–60 min","num":1,"desc":"Sensitivity / specificity / PPV / NPV · Prevalence and predictive value · Heterophile antibody and biotin interference"},{"file":"decks/Immuno_02_Autoimmune-Serology.pptx","code":"Immuno_02","slides":21,"block":"Immunology & Serology","blockKey":"immuno","color":"6A1B9A","title":"Autoimmune Serology","mins":"45–60 min","num":2,"desc":"ANA by IFA: patterns and titer · ENA panel and disease associations · ANCA (c-/p-ANCA, PR3, MPO)"},{"file":"decks/Immuno_03_Infectious-Disease-Serology.pptx","code":"Immuno_03","slides":21,"block":"Immunology & Serology","blockKey":"immuno","color":"6A1B9A","title":"Infectious Disease Serology","mins":"45–60 min","num":3,"desc":"IgM/IgG kinetics and window periods · Hepatitis B serologic panel · HIV 4th-generation algorithm"},{"file":"decks/Immuno_04_Allergy-Immunodeficiency-Protein-Testing.pptx","code":"Immuno_04","slides":21,"block":"Immunology & Serology","blockKey":"immuno","color":"6A1B9A","title":"Allergy, Immunodeficiency, and Protein-Based Immune Testing","mins":"45–60 min","num":4,"desc":"Quantitative IgG/IgA/IgM/IgE · SPEP correlation and hypogammaglobulinemia · Specific IgE and tryptase"},{"file":"decks/Molecular_01_Molecular-Methods-for-Residents.pptx","code":"Molecular_01","slides":21,"block":"Molecular & Cytogenetics","blockKey":"molecular","color":"00838F","title":"Molecular Methods for Residents","mins":"45–60 min","num":1,"desc":"PCR and quantitative / RT-PCR · FISH and karyotype · Next-generation sequencing overview"},{"file":"decks/Molecular_02_Variant-Interpretation-and-Reporting.pptx","code":"Molecular_02","slides":21,"block":"Molecular & Cytogenetics","blockKey":"molecular","color":"00838F","title":"Variant Interpretation and Reporting","mins":"45–60 min","num":2,"desc":"ACMG/AMP and somatic tiering frameworks · HGVS nomenclature · Germline vs somatic interpretation"},{"file":"decks/Molecular_03_Molecular-Testing-in-Hematologic-Malignancy.pptx","code":"Molecular_03","slides":21,"block":"Molecular & Cytogenetics","blockKey":"molecular","color":"00838F","title":"Molecular Testing in Hematologic Malignancy","mins":"45–60 min","num":3,"desc":"BCR-ABL1 and other fusions · Clonality (IGH/TCR rearrangement) · MRD concepts and methods"},{"file":"decks/Molecular_04_Solid-Tumor-and-Germline-Testing.pptx","code":"Molecular_04","slides":21,"block":"Molecular & Cytogenetics","blockKey":"molecular","color":"00838F","title":"Solid Tumor and Germline Testing Fundamentals","mins":"45–60 min","num":4,"desc":"Companion diagnostics and targeted therapy · Hereditary cancer syndromes · Tissue adequacy, fixation, and tumor fraction"},{"file":"decks/Molecular_05_Validation-QC-Bioinformatics.pptx","code":"Molecular_05","slides":21,"block":"Molecular & Cytogenetics","blockKey":"molecular","color":"00838F","title":"Validation, Quality Control, and Bioinformatics Essentials","mins":"45–60 min","num":5,"desc":"Analytic validation: accuracy, precision, LOD · Contamination control and amplicon carryover · Bioinformatics pipeline awareness"},{"file":"decks/LabMgmt_01_Quality-Management-Systems.pptx","code":"LabMgmt_01","slides":21,"block":"Laboratory Management & Quality","blockKey":"labmgmt","color":"455A64","title":"Quality Management Systems","mins":"45–60 min","num":1,"desc":"QC vs QA vs QMS · Levey–Jennings and Westgard multirules · Proficiency testing and peer comparison"},{"file":"decks/LabMgmt_02_Regulatory-and-Accreditation.pptx","code":"LabMgmt_02","slides":20,"block":"Laboratory Management & Quality","blockKey":"labmgmt","color":"455A64","title":"Regulatory and Accreditation Essentials","mins":"45–60 min","num":2,"desc":"CLIA complexity categories · CAP accreditation and checklists · Inspection readiness"},{"file":"decks/LabMgmt_03_Patient-Safety-Error-Investigation.pptx","code":"LabMgmt_03","slides":21,"block":"Laboratory Management & Quality","blockKey":"labmgmt","color":"455A64","title":"Patient Safety and Error Investigation","mins":"45–60 min","num":3,"desc":"Root-cause analysis methods · Near miss vs adverse event · Transfusion-safety events and haemovigilance"},{"file":"decks/LabMgmt_04_Informatics-and-LIS.pptx","code":"LabMgmt_04","slides":20,"block":"Laboratory Management & Quality","blockKey":"labmgmt","color":"455A64","title":"Laboratory Informatics and LIS Fundamentals","mins":"45–60 min","num":4,"desc":"LIS architecture and workflow · Middleware and autoverification rules · Interfaces (HL7) and failure modes"},{"file":"decks/LabMgmt_05_Utilization-Cost-Leadership.pptx","code":"LabMgmt_05","slides":21,"block":"Laboratory Management & Quality","blockKey":"labmgmt","color":"455A64","title":"Utilization Management, Cost Awareness, and Leadership","mins":"45–60 min","num":5,"desc":"Test utilization and overuse reduction · Send-out formulary management · Consultative pathology practice"}]};
+const BLOCKS=DATA.blocks, DECKS=DATA.decks;
+let activeTab="home", query="", selected=new Set();
+const el=(id)=>document.getElementById(id);
+function lighten(hex){return "#"+hex;}
+// tabs
+const tabrow=el("tabrow");
+function addTab(key,label,color){const t=document.createElement("div");t.className="tab";t.dataset.k=key;
+  t.innerHTML=(color?'<span class="dot" style="background:#'+color+'"></span>':'')+label;
+  t.onclick=()=>{activeTab=key;query="";el("q").value="";render();};tabrow.appendChild(t);}
+addTab("home","⌂  Home");
+BLOCKS.forEach(b=>addTab(b.key,b.name,b.color));
+function curriculumCard(){return '';}
+function renderHome(){
+  el("home").innerHTML=
+   '<div class="home-hero"><div class="stats">'+
+     '<div class="stat"><div class="big">'+DECKS.length+'</div><div class="lab">Lectures</div></div>'+
+     '<div class="stat"><div class="big">'+BLOCKS.length+'</div><div class="lab">Subspecialty blocks</div></div>'+
+     '<div class="stat"><div class="big">'+803+'</div><div class="lab">Slides total</div></div>'+
+   '</div><div class="cta">'+
+     '<a class="pri" href="curriculum/Makassed_CP_Curriculum_Master.pdf" download>↓ Curriculum master (PDF)</a>'+
+     '<a class="sec" href="curriculum/Makassed_CP_Curriculum_Master.docx" download>↓ Curriculum (Word)</a>'+
+   '</div></div>'+
+   '<div class="note">Tip: switch tabs to browse a subspecialty, tick lectures to download several at once as a .zip, or use the search box. Every deck is editable PowerPoint.</div>';
+}
+function deckCard(d){
+  const checked=selected.has(d.file)?"checked":"";
+  return '<div class="card">'+
+    '<div class="top"><div class="badge" style="background:#'+d.color+'">'+(d.num||"·")+'</div>'+
+    '<div><h3>'+d.title+'</h3><div class="meta">'+d.block+' · '+d.slides+' slides · '+d.mins+'</div></div></div>'+
+    (d.desc?'<div class="desc">'+d.desc+'</div>':'')+
+    '<div class="row"><label class="chk"><input type="checkbox" data-f="'+d.file+'" '+checked+'> select</label>'+
+    '<a class="dl" style="background:#'+d.color+'" href="'+d.file+'" download>↓ Download</a></div></div>';
+}
+function render(){
+  // tab active state
+  document.querySelectorAll(".tab").forEach(t=>{const on=t.dataset.k===activeTab;t.classList.toggle("active",on);
+    if(on&&t.dataset.k!=="home"){const b=BLOCKS.find(x=>x.key===t.dataset.k);t.style.background=b?("#"+b.color):"var(--navy)";}else if(on){t.style.background="var(--navy)";}else{t.style.background="#fff";}});
+  el("home").style.display=activeTab==="home"?"block":"none";
+  if(activeTab==="home")renderHome();
+  let decks=DECKS.filter(d=>activeTab==="home"||d.blockKey===activeTab);
+  if(query){const ql=query.toLowerCase();decks=decks.filter(d=>(d.title+" "+d.block+" "+d.desc).toLowerCase().includes(ql));}
+  const list=el("list");
+  if(activeTab==="home"&&!query){
+    // group by block
+    let html="";
+    BLOCKS.forEach(b=>{const ds=decks.filter(d=>d.blockKey===b.key);if(!ds.length)return;
+      html+='<div class="blocktitle"><span class="bar" style="background:#'+b.color+'"></span>'+b.name+' <span class="n">'+ds.length+' lectures</span></div>';
+      html+='<div class="grid">'+ds.map(deckCard).join("")+'</div>';});
+    list.innerHTML=html;
+  } else {
+    list.innerHTML='<div class="grid">'+decks.map(deckCard).join("")+'</div>';
+  }
+  el("count").textContent=decks.length+" lecture"+(decks.length===1?"":"s");
+  bindChecks();updateSelbar();
+}
+function bindChecks(){document.querySelectorAll('.chk input').forEach(c=>{c.onchange=()=>{if(c.checked)selected.add(c.dataset.f);else selected.delete(c.dataset.f);updateSelbar();};});}
+function updateSelbar(){el("selN").textContent=selected.size;el("selbar").classList.toggle("show",selected.size>0);}
+el("q").addEventListener("input",e=>{query=e.target.value;render();});
+el("selectAll").onclick=()=>{document.querySelectorAll('.chk input').forEach(c=>{c.checked=true;selected.add(c.dataset.f);});updateSelbar();};
+el("clearSel").onclick=()=>{selected.clear();document.querySelectorAll('.chk input').forEach(c=>c.checked=false);updateSelbar();};
+el("dlZip").onclick=async()=>{
+  if(!selected.size)return;const btn=el("dlZip");btn.textContent="Zipping…";btn.disabled=true;
+  try{const zip=new JSZip();const map={};DECKS.forEach(d=>map[d.file]=d);
+    for(const f of selected){const r=await fetch(f);if(!r.ok)throw new Error("fetch failed: "+f);const buf=await r.arrayBuffer();zip.file(f.split('/').pop(),buf);}
+    const blob=await zip.generateAsync({type:"blob"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="Makassed-CP-lectures.zip";document.body.appendChild(a);a.click();a.remove();
+  }catch(e){alert("Zip download needs the hosted site (GitHub Pages). Individual downloads work anywhere.\n\n"+e.message);}
+  btn.textContent="Download selected (.zip)";btn.disabled=false;
+};
+render();
+</script>
+</body>
+</html>
