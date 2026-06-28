@@ -34,7 +34,7 @@ h1{margin:.3rem 0 .15rem;font-size:30px;font-weight:800}
 .blocktitle{display:flex;align-items:center;gap:11px;margin:26px 0 12px;font-size:15px;font-weight:800;letter-spacing:.3px;text-transform:uppercase}
 .blocktitle .bar{width:30px;height:4px;border-radius:3px}
 .blocktitle .n{color:var(--muted);font-weight:600;font-size:13px;text-transform:none;letter-spacing:0}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(330px,100%),1fr));gap:14px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 16px 14px;display:flex;flex-direction:column;gap:9px;transition:.12s;position:relative}
 .card:hover{box-shadow:0 6px 22px rgba(20,40,60,.09);transform:translateY(-1px)}
 .card .top{display:flex;align-items:flex-start;gap:11px}
@@ -63,7 +63,15 @@ h1{margin:.3rem 0 .15rem;font-size:30px;font-weight:800}
 .cta .sec{background:#fff;border:1.5px solid var(--line);color:var(--body)}
 footer{color:var(--muted);font-size:12.5px;text-align:center;padding:34px 20px 60px}
 .note{background:#FFF7E6;border:1px solid #F1D79A;color:#7A5B12;font-size:12.5px;padding:10px 14px;border-radius:9px;margin:14px 0}
-@media(max-width:560px){h1{font-size:23px}.grid{grid-template-columns:1fr}}
+@media(max-width:560px){
+  h1{font-size:23px}
+  header{padding:26px 0 24px}
+  .grid{grid-template-columns:1fr}
+  /* Collapse the 7-block tab bar into one swipeable row instead of a tall sticky stack */
+  .tabrow{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:10px 0}
+  .tabrow::-webkit-scrollbar{display:none}
+  .tab{flex:0 0 auto;white-space:nowrap}
+}
 </style>
 </head>
 <body>
