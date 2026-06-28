@@ -40,7 +40,7 @@
   {
    "file": "decks/Coag_05_Coagulation-Testing-and-Bleeding-Thrombosis.pptx",
    "code": "Coag_05",
-   "slides": 24,
+   "slides": 25,
    "block": "Hematology & Coagulation",
    "blockKey": "heme",
    "color": "C62133",
@@ -64,7 +64,7 @@
   {
    "file": "decks/Heme_02_Anemia-and-Red-Cell-Disorders.pptx",
    "code": "Heme_02",
-   "slides": 24,
+   "slides": 25,
    "block": "Hematology & Coagulation",
    "blockKey": "heme",
    "color": "C62133",
@@ -76,7 +76,7 @@
   {
    "file": "decks/Heme_03_Leukocytosis-Cytopenias-Leukemia-Screening.pptx",
    "code": "Heme_03",
-   "slides": 24,
+   "slides": 25,
    "block": "Hematology & Coagulation",
    "blockKey": "heme",
    "color": "C62133",
@@ -88,7 +88,7 @@
   {
    "file": "decks/Heme_04_Platelet-Disorders-and-Thrombocytopenia.pptx",
    "code": "Heme_04",
-   "slides": 24,
+   "slides": 26,
    "block": "Hematology & Coagulation",
    "blockKey": "heme",
    "color": "C62133",
@@ -160,7 +160,7 @@
   {
    "file": "decks/Chem_01_Analytic-Techniques-and-Error.pptx",
    "code": "Chem_01",
-   "slides": 26,
+   "slides": 27,
    "block": "Clinical Chemistry",
    "blockKey": "chem",
    "color": "1565C0",
@@ -172,7 +172,7 @@
   {
    "file": "decks/Chem_02_Electrolytes-Osmolality-Acid-Base.pptx",
    "code": "Chem_02",
-   "slides": 21,
+   "slides": 25,
    "block": "Clinical Chemistry",
    "blockKey": "chem",
    "color": "1565C0",
@@ -184,7 +184,7 @@
   {
    "file": "decks/Chem_03_Renal-Liver-Cardiac-Biomarkers.pptx",
    "code": "Chem_03",
-   "slides": 21,
+   "slides": 26,
    "block": "Clinical Chemistry",
    "blockKey": "chem",
    "color": "1565C0",
@@ -196,7 +196,7 @@
   {
    "file": "decks/Chem_04_Endocrine-and-Protein-Testing.pptx",
    "code": "Chem_04",
-   "slides": 22,
+   "slides": 26,
    "block": "Clinical Chemistry",
    "blockKey": "chem",
    "color": "1565C0",
@@ -208,7 +208,7 @@
   {
    "file": "decks/Chem_05_Toxicology-TDM-POCT.pptx",
    "code": "Chem_05",
-   "slides": 21,
+   "slides": 25,
    "block": "Clinical Chemistry",
    "blockKey": "chem",
    "color": "1565C0",
@@ -220,7 +220,7 @@
   {
    "file": "decks/Micro_01_Specimen-Selection-Collection-Rejection.pptx",
    "code": "Micro_01",
-   "slides": 20,
+   "slides": 25,
    "block": "Microbiology",
    "blockKey": "micro",
    "color": "2E7D32",
@@ -232,7 +232,7 @@
   {
    "file": "decks/Micro_02_Gram-Stain-Culture-Identification.pptx",
    "code": "Micro_02",
-   "slides": 20,
+   "slides": 25,
    "block": "Microbiology",
    "blockKey": "micro",
    "color": "2E7D32",
@@ -244,7 +244,7 @@
   {
    "file": "decks/Micro_03_Antimicrobial-Susceptibility-Testing.pptx",
    "code": "Micro_03",
-   "slides": 20,
+   "slides": 25,
    "block": "Microbiology",
    "blockKey": "micro",
    "color": "2E7D32",
@@ -256,7 +256,7 @@
   {
    "file": "decks/Micro_04_Rapid-Diagnostics-Molecular-Microbiology.pptx",
    "code": "Micro_04",
-   "slides": 20,
+   "slides": 25,
    "block": "Microbiology",
    "blockKey": "micro",
    "color": "2E7D32",
@@ -268,7 +268,7 @@
   {
    "file": "decks/Micro_05_Blood-Cultures-Sepsis-Infection-Control.pptx",
    "code": "Micro_05",
-   "slides": 20,
+   "slides": 25,
    "block": "Microbiology",
    "blockKey": "micro",
    "color": "2E7D32",
@@ -280,7 +280,7 @@
   {
    "file": "decks/Immuno_01_Immunoassay-Principles-Test-Performance.pptx",
    "code": "Immuno_01",
-   "slides": 20,
+   "slides": 25,
    "block": "Immunology & Serology",
    "blockKey": "immuno",
    "color": "6A1B9A",
@@ -292,7 +292,7 @@
   {
    "file": "decks/Immuno_02_Autoimmune-Serology.pptx",
    "code": "Immuno_02",
-   "slides": 21,
+   "slides": 25,
    "block": "Immunology & Serology",
    "blockKey": "immuno",
    "color": "6A1B9A",
@@ -304,7 +304,7 @@
   {
    "file": "decks/Immuno_03_Infectious-Disease-Serology.pptx",
    "code": "Immuno_03",
-   "slides": 21,
+   "slides": 24,
    "block": "Immunology & Serology",
    "blockKey": "immuno",
    "color": "6A1B9A",
@@ -316,7 +316,7 @@
   {
    "file": "decks/Immuno_04_Allergy-Immunodeficiency-Protein-Testing.pptx",
    "code": "Immuno_04",
-   "slides": 21,
+   "slides": 24,
    "block": "Immunology & Serology",
    "blockKey": "immuno",
    "color": "6A1B9A",
@@ -328,7 +328,7 @@
   {
    "file": "decks/Molecular_01_Molecular-Methods-for-Residents.pptx",
    "code": "Molecular_01",
-   "slides": 21,
+   "slides": 26,
    "block": "Molecular & Cytogenetics",
    "blockKey": "molecular",
    "color": "00838F",
@@ -340,7 +340,7 @@
   {
    "file": "decks/Molecular_02_Variant-Interpretation-and-Reporting.pptx",
    "code": "Molecular_02",
-   "slides": 21,
+   "slides": 25,
    "block": "Molecular & Cytogenetics",
    "blockKey": "molecular",
    "color": "00838F",
@@ -352,7 +352,7 @@
   {
    "file": "decks/Molecular_03_Molecular-Testing-in-Hematologic-Malignancy.pptx",
    "code": "Molecular_03",
-   "slides": 21,
+   "slides": 26,
    "block": "Molecular & Cytogenetics",
    "blockKey": "molecular",
    "color": "00838F",
@@ -364,7 +364,7 @@
   {
    "file": "decks/Molecular_04_Solid-Tumor-and-Germline-Testing.pptx",
    "code": "Molecular_04",
-   "slides": 21,
+   "slides": 25,
    "block": "Molecular & Cytogenetics",
    "blockKey": "molecular",
    "color": "00838F",
@@ -376,7 +376,7 @@
   {
    "file": "decks/Molecular_05_Validation-QC-Bioinformatics.pptx",
    "code": "Molecular_05",
-   "slides": 21,
+   "slides": 25,
    "block": "Molecular & Cytogenetics",
    "blockKey": "molecular",
    "color": "00838F",
@@ -388,7 +388,7 @@
   {
    "file": "decks/LabMgmt_01_Quality-Management-Systems.pptx",
    "code": "LabMgmt_01",
-   "slides": 21,
+   "slides": 25,
    "block": "Laboratory Management & Quality",
    "blockKey": "labmgmt",
    "color": "455A64",
@@ -400,7 +400,7 @@
   {
    "file": "decks/LabMgmt_02_Regulatory-and-Accreditation.pptx",
    "code": "LabMgmt_02",
-   "slides": 20,
+   "slides": 25,
    "block": "Laboratory Management & Quality",
    "blockKey": "labmgmt",
    "color": "455A64",
@@ -412,7 +412,7 @@
   {
    "file": "decks/LabMgmt_03_Patient-Safety-Error-Investigation.pptx",
    "code": "LabMgmt_03",
-   "slides": 21,
+   "slides": 25,
    "block": "Laboratory Management & Quality",
    "blockKey": "labmgmt",
    "color": "455A64",
@@ -424,7 +424,7 @@
   {
    "file": "decks/LabMgmt_04_Informatics-and-LIS.pptx",
    "code": "LabMgmt_04",
-   "slides": 20,
+   "slides": 25,
    "block": "Laboratory Management & Quality",
    "blockKey": "labmgmt",
    "color": "455A64",
@@ -436,7 +436,7 @@
   {
    "file": "decks/LabMgmt_05_Utilization-Cost-Leadership.pptx",
    "code": "LabMgmt_05",
-   "slides": 21,
+   "slides": 25,
    "block": "Laboratory Management & Quality",
    "blockKey": "labmgmt",
    "color": "455A64",
